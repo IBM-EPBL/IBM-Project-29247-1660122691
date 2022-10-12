@@ -1,0 +1,90 @@
+.head{
+    display: flex;
+}
+.left{
+    width: 50%;
+    background-color: rgb(242, 188, 188);
+    border: 1px solid black;
+}
+.right{
+    width: 50%;
+    background-color: rgb(246, 246, 195);
+    border: 1px solid black;
+}
+
+.name{
+    padding-left: 150px;
+    border: 1px solid black;
+    width: 200px;
+}
+.objective{
+    /* background-color: green; */
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 25px;
+    background-color: black;
+    color: white;
+}
+
+img{
+    /* border: 1px solid black; */
+    /* margin-left: 50px; */
+    width: 300px;
+    padding: 5px;
+    height: 250px;
+}
+.image{
+    /* background-color: green; */
+}
+.objective>p{
+    padding: 5px;
+}
+
+.button{
+    margin-left: 40%;
+
+}
+.hire{
+    margin-top: 8%;
+    background-color: red;
+    font-size: 25px;
+    /* margin-right: 60%; */
+    margin-left: 5%;
+}
+.noPrint{
+    background-color: red;
+    font-size: 25px;
+    margin-left: 10%;
+}
+
+@media print {
+    .noPrint{
+      display:none;
+    }
+  }
+
+  
+  form>h2{
+    text-align: center;
+  }
+
+ 
+  form>button{
+    margin-top: 1%;
+    background-color: red;
+    font-size: 25px;
+    margin-left: 50%;
+  }
+  
+
+  .tb{
+    font-size: 25px;
+    /* border: 1px solid black; */
+    margin-left: 40%; 
+  }
+
+  

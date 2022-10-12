@@ -1,0 +1,20 @@
+.main{
+    background: #CCCCCC;
+    height: 740px;
+    width:250px;
+    position: relative;
+    }
+.box1 {
+    background: CCCCCC;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+.box2 {
+        background: burlywood;
+        position: absolute;
+        top: 45%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        }
