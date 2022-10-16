@@ -24,13 +24,11 @@ def addrec():
          pw = request.form['pass']
          sql = "INSERT into user values ('{}', '{}','{}', '{}')".format(email, name, roll, pw)
          stmt = ibm_db.exec_immediate(conn, sql)
-         with sql.connect("student.db") as con:
-            cur = con.cursor()
-            cur.execute("INSERT INTO student (email,username,rollnumber,password) VALUES (?,?,?,?)",(name,email,roll,pw) )
-            con.commit()
+         
      
       except:
-         con.rollback()
+         print (sys.exc_info()[0])
+        
         
       
       finally:
