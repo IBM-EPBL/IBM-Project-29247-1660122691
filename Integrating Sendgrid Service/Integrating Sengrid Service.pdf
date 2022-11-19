@@ -1,0 +1,12 @@
+from flask_mail import Mail, Message
+app.config['MAIL_SERVER']='smtp.gmail.com'
+app.config['MAIL_PORT'] = 465
+app.config['MAIL_USERNAME'] = 'sreenithiss.19it@kongu.edu'
+app.config['MAIL_PASSWORD'] = '01-Jul-02'
+app.config['MAIL_USE_TLS'] = False
+app.config['MAIL_USE_SSL'] = True
+mail = Mail(app)
+msg = Message(
+'Hello',sender ='sreenithiss.19it@kongu.edu', recipients = [gemail])
+msg.body = 'Exceeds the limit in food category'
+mail.send(msg)
